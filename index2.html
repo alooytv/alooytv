@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RNMZHSQH55"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RNMZHSQH55');
+</script>
+    <!-- Google tag (gtag.js) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlooyTV - مشاهدة المسلسلات</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .logo {
+            width: 100px;
+            border-radius: 50%;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: block;
+            background-color: #F57C00;
+            color: white;
+            padding: 15px;
+            border-radius: 30px;
+            margin: 10px auto;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            width: 80%;
+            max-width: 400px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #e56a00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiakuPOCWvRdIEpZbQsUG4Rxy7tMHRq9PxqujcEbCJ5kw6iG9JXjUKPAyk04ZCDbdvNcdsF3FRCFq0r47EAQxN6z_NajsrBneHP0QYgNSD1urfxb_flVncAX7E9u02i3584Kk2vg6MrrdWN6A8g5PPWRlnGyyVyf4orK-Vtv27T7mr0GQHysPLrbFgg4w=s1600" class="logo" alt="AlooyTV Logo">
+        <div class="title">alooytv | joootv ✅</div>
+        <div class="subtitle">شاهد مسلسلاتك المفضلة مجانا | alooytv | joootv</div>
+        
+        <a href="https://alooytv.top/" class="button">للدخول للموقع من الامارات</a>
+        <a href="https://alooytv.top/tv-series.html" class="button">أحدث الحلقات</a>
+        <a href="https://alooytv.top/genre/ramadan-kleeji-2025.html" class="button">رمضان خليجي 2025</a>
+        <a href="https://alooytv.top/genre/ramadan-arabi-2025.html" class="button">رمضان عربي 2025</a>
+        <a href="https://alooytv.top/genre/turki.html" class="button">مسلسلات تركية</a>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    function generateRandomString() {
+        const length = Math.floor(Math.random() * (60 - 10 + 1)) + 10;
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let result = '';
+        for (let i = 0; i < length; i++) {
+            result += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        return result;
+    }
+
+    function updateLinks() {
+        document.querySelectorAll('a').forEach(link => {
+            const url = new URL(link.href);
+            const domainParts = url.hostname.split('.');
+
+            if (domainParts.length >= 2) {
+                const mainDomain = domainParts.slice(-2).join('.');
+                const randomString = generateRandomString();
+                url.hostname = `${randomString}.${mainDomain}`;
+            }
+
+            link.href = url.href;
+        });
+    }
+
+    window.addEventListener('DOMContentLoaded', updateLinks);
+</script>
